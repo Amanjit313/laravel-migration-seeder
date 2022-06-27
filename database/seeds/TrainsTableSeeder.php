@@ -21,7 +21,7 @@ class TrainsTableSeeder extends Seeder
             $new_train->orario_partenza =  $faker->time();
             $new_train->orario_arrivo =  $faker->time();
             $new_train->codice_treno = $faker->numberBetween(1000,9999);
-            $new_train->codice_treno = $faker->numberBetween(1,10);
+            $new_train->numero_carrozze = $faker->numberBetween(1,10);
             $new_train->in_orario = $faker->boolean();
             $new_train->is_cancellato = $faker->boolean();
             $new_train->save();
